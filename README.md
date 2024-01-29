@@ -21,7 +21,7 @@ $$\begin{align\*}
 \boldsymbol{\dot e}=\boldsymbol {Ae} +\boldsymbol{Bd}
 \end{align\*} \tag{1}$$
 
-where $\boldsymbol{e}=\left\[ {\boldsymbol{ e}\_p^T,\boldsymbol{ e}\_v^T}\right\]^T$, $\boldsymbol e_p$ and $\boldsymbol e_v$ represent the tracking errors of position and velocity, respectively. 
+where $\boldsymbol{e}=\left\[ {\boldsymbol{ e}\_p^T,\boldsymbol{ e}\_v^T}\right\]^T$, $\boldsymbol e_p$ and $\boldsymbol e_v$ represent the tracking errors of position and velocity, respectively, $\tilde{\boldsymbol F}\_r^E=\hat{\boldsymbol F}_r^E-\boldsymbol F_r^E$ represent the estimation error of the RSO.
 
 
 
