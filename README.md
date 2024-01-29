@@ -1,49 +1,17 @@
 # Stability-analysis
 Stability analysis of translational loop
-$$\underbrace{\left( \begin{matrix}{{{\dot{\boldsymbol e}}}_{p}} $$
-    \underbrace{\left( \begin{matrix}
-   {{{\dot{\boldsymbol e}}}_{p}}  \\
-   {{{\dot{\boldsymbol e}}}_{v}}  \\
-\end{matrix} \right)}_{\dot{\boldsymbol e}}=\underbrace{\left( \begin{matrix}
-   {{\boldsymbol 0}_{3\times 3}} & {{\boldsymbol I}_{3\times 3}}  \\
-   \frac{-{{\boldsymbol K}_{p}}}{m} & \frac{-{{\boldsymbol K}_{v}}}{m}  \\
-\end{matrix} \right)}_{\boldsymbol A} \underbrace{\left( \begin{matrix}
-   {{\boldsymbol e}_{p}}  \\
-   {{\boldsymbol e}_{v}}  \\
-\end{matrix} \right)}_{\boldsymbol e}+\underbrace{\left( \begin{matrix}
-   {{\boldsymbol 0}_{3\times 3}} & {{\boldsymbol 0}_{3\times 3}}  \\
-   {{\boldsymbol 0}_{3\times 3}} & \frac{{{\boldsymbol I}_{3\times 3}}}{m}  \\
-\end{matrix} \right)}_{\boldsymbol B} \underbrace{\left( \begin{matrix}
-   {{\boldsymbol 0}_{3\times 1}}  \\
-   {{{\tilde{\boldsymbol F}}}_{r}^E}  \\
-\end{matrix} \right)}_{\tilde {\boldsymbol d}},
-$$
 
-
-where ${{{\tilde{\boldsymbol F}}}_{r}^E}=\hat{\boldsymbol F}_r^E-\boldsymbol F_r^E$.
 
 It can be checked that $\boldsymbol A$ has negative definite structure if $\boldsymbol K_p$ and $\boldsymbol K_v$ have positive definite structures. As a consequence, there must exist a positive definite symmetric matrix $\boldsymbol M$ that meets the equation $\boldsymbol A^T \boldsymbol M+\boldsymbol M \boldsymbol A=-\boldsymbol I$. Subsequently, a Lyapunov function is designed as follows,
-$$
-\begin{equation} \label{lyapunov}
-     V = {\boldsymbol e^T} \boldsymbol{Me} + \frac{1}{2}({{\tilde {\boldsymbol v}_r^E}})^T\tilde {\boldsymbol v}_r^E.
-\end{equation}
-$$
+$$V = {\boldsymbol e^T} \boldsymbol{Me} + \frac{1}{2}({{\tilde {\boldsymbol v}_r^E}})^T\tilde {\boldsymbol v}_r^E.$$
 
-%where $\boldsymbol v_m^E$ represents  $\boldsymbol v_m^E$ for ease of representation.
 
 Differentiate $V$, it can be implied that 
-$$
-\begin{align}\label{V-dot}
-  \dot{ V} =&\dot{\boldsymbol e}^T \boldsymbol M\boldsymbol e+{\boldsymbol e}^T \boldsymbol M \dot{\boldsymbol e}+(\tilde{\boldsymbol v}_{r}^E)^T\dot{\tilde{\boldsymbol v}}_{r}^E\notag \\
-  = &{\boldsymbol e^T}{\boldsymbol A^T}{\boldsymbol M}{\boldsymbol e}+{\boldsymbol {\tilde d}^T}{\boldsymbol B^T}{\boldsymbol M}{\boldsymbol e}+{\boldsymbol e^T}{\boldsymbol M}{\boldsymbol A}{\boldsymbol e}\notag \\
-  &+{\boldsymbol e^T}{\boldsymbol M}{\boldsymbol B}{\boldsymbol {\tilde d}}+ (\tilde{\boldsymbol v}_{r}^E)^T\dot{\tilde{\boldsymbol v}}_{r}^E \notag \\
-  %\left( {{\boldsymbol e^T}{\boldsymbol A^T} + {\boldsymbol {\tilde d}^T}{\boldsymbol B^T}} \right)\boldsymbol{Me}+ {\boldsymbol e^T}\boldsymbol M\left( {\boldsymbol {Ae} + \boldsymbol B\tilde {\boldsymbol {\boldsymbol d}}} \right)  + (\tilde{\boldsymbol v}_{r}^E)^T\dot{\tilde{\boldsymbol v}}_{r}^E \notag\\
- =& {\boldsymbol e^T}\left( {{\boldsymbol A^T}\boldsymbol M+\boldsymbol{MA}} \right)\boldsymbol e + 2{\boldsymbol e^T}\boldsymbol{MB}\tilde {\boldsymbol d} +
- %{\boldsymbol e^T}\boldsymbol{MB}\tilde {\boldsymbol d} + {{\tilde {\boldsymbol d}}^T}{\boldsymbol B^T}\boldsymbol{Me} + 
- (\tilde{\boldsymbol v}_{r}^E)^T\dot{\tilde{\boldsymbol v}}_{r}^E \notag\\
- =&  - {\boldsymbol e^T}\boldsymbol e + 2{\boldsymbol e^T}\boldsymbol{MB}\tilde {\boldsymbol d} + (\tilde{\boldsymbol v}_{r}^E)^T\dot{\tilde{\boldsymbol v}}_{r}^E.
-\end{align}
-$$
+$$\dot{V} =\dot{\boldsymbol e}^T \boldsymbol M\boldsymbol e+{\boldsymbol e}^T \boldsymbol M \dot{\boldsymbol e}+(\tilde{\boldsymbol v}_ {r}^E)^T\dot{\tilde{\boldsymbol v}}_ {r}^E\notag \\
+  = {\boldsymbol e^T}{\boldsymbol A^T}{\boldsymbol M}{\boldsymbol e}+{\boldsymbol {\tilde d}^T}{\boldsymbol B^T}{\boldsymbol M}{\boldsymbol e}+{\boldsymbol e^T}{\boldsymbol M}{\boldsymbol A}{\boldsymbol e}\notag \\
+  +{\boldsymbol e^T}{\boldsymbol M}{\boldsymbol B}{\boldsymbol {\tilde d}}+ (\tilde{\boldsymbol v}_ {r}^E)^T\dot{\tilde{\boldsymbol v}}_ {r}^E \notag \\
+ ={\boldsymbol e^T}\left( {{\boldsymbol A^T}\boldsymbol M+\boldsymbol{MA}} \right)\boldsymbol e + 2{\boldsymbol e^T}\boldsymbol{MB}\tilde {\boldsymbol d} +
+ =- {\boldsymbol e^T}\boldsymbol e + 2{\boldsymbol e^T}\boldsymbol{MB}\tilde {\boldsymbol d} + (\tilde{\boldsymbol v}_ {r}^E)^T\dot{\tilde{\boldsymbol v}}_{r}^E.$$
 
 Furthermore, by resorting to Young's inequality [^1] , it can be verified that 
 $$
