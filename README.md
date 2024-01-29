@@ -1,6 +1,6 @@
 # Stability-analysis
 Stability analysis of translational loop
-$$\begin{align} \label{state-function}
+$$\begin{align} 
     \underbrace{\left( \begin{matrix}
    {{{\dot{\boldsymbol e}}}_{p}}  \\
    {{{\dot{\boldsymbol e}}}_{v}}  \\
