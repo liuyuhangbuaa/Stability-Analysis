@@ -21,7 +21,7 @@ $$\begin{align\*}
 \boldsymbol{\dot e}=\boldsymbol {Ae} +\boldsymbol{Bd}
 \end{align\*} \tag{1}$$
 
-where $\boldsymbol{e}=\left\[ {\boldsymbol{ e}\_p^T,\boldsymbol{ e}\_v^T}\right\]^T$, $\boldsymbol e_p$ and $\boldsymbol e_v$ represent the tracking errors of position and velocity, respectively, $\tilde{\boldsymbol F}\_r^E=\hat{\boldsymbol F}_r^E-\boldsymbol F_r^E$ represent the estimation error of the RSO.
+where $\boldsymbol{e}=\left\[ {\boldsymbol{ e}\_p^T,\boldsymbol{ e}\_v^T}\right\]^T$, $\boldsymbol e_p$ and $\boldsymbol e_v$ represent the tracking errors of position and velocity, respectively, $\tilde{\boldsymbol F}\_r^E=\hat{\boldsymbol F}\_r^E-\boldsymbol F_r^E=-\boldsymbol {\vartheta} \tilde{\boldsymbol v}_{r}^E$ represent the estimation error of the RSO.
 
 
 
@@ -46,7 +46,7 @@ $$\begin{align\*}
 {{\boldsymbol e}^T}\boldsymbol {MB}\tilde{\boldsymbol d}&\le \frac{1}{2\varepsilon }\lambda _{M}^{2}\left( \boldsymbol {MB} \right){{\boldsymbol e}^T}\boldsymbol e+\frac{\varepsilon }{2}{{\tilde{\boldsymbol d}}^T}\tilde{\boldsymbol d},\tag{4c}
 \end{align\*}$$
 
-where  $\varepsilon$ is an arbitrary positive constant, and ${\delta}=(\dot{\boldsymbol v}_ {r}^E)^T{{{\dot{\boldsymbol v}}}_ {r}^E}$  is a bounded value concerned with $\dot{\boldsymbol v}_{r}^E$ according to Assumption \ref{assumption1}.
+where  $\varepsilon$ is an arbitrary positive constant, and ${\delta}=(\dot{\boldsymbol v}_ {r}^E)^T{{{\dot{\boldsymbol v}}}_ {r}^E}$  is a bounded value concerned with $\dot{\boldsymbol v}_{r}^E$.
 
 From the stability analysis of the RSO, it can be obtained that 
 
