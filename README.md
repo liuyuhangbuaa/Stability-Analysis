@@ -1,8 +1,6 @@
 # Stability-analysis
 Stability analysis of translational loop
-$$\begin{align} 
-ep
-$$\end{align}
+$$
     \underbrace{\left( \begin{matrix}
    {{{\dot{\boldsymbol e}}}_{p}}  \\
    {{{\dot{\boldsymbol e}}}_{v}}  \\
@@ -19,7 +17,7 @@ $$\end{align}
    {{\boldsymbol 0}_{3\times 1}}  \\
    {{{\tilde{\boldsymbol F}}}_{r}^E}  \\
 \end{matrix} \right)}_{\tilde {\boldsymbol d}},
-\end{align}$$
+$$
 
 
 where ${{{\tilde{\boldsymbol F}}}_{r}^E}=\hat{\boldsymbol F}_r^E-\boldsymbol F_r^E$.
