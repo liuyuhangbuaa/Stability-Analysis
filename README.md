@@ -7,20 +7,20 @@ $$\begin{align\*}
 \boldsymbol A&=\left\[\\begin{array}{cc}
   {\boldsymbol 0}\_{3\times 3} & {\boldsymbol I}\_{3\times 3} \\\\
   -\frac{\boldsymbol K_p}{m} & -\frac{\boldsymbol K_v}{m}
-\\end{array}\right\]\\\\\\
+\\end{array}\right\],\\\\\\
 \boldsymbol B&=\left\[\\begin{array}{cc}
   {\boldsymbol 0}\_{3\times 3} & {\boldsymbol 0}\_{3\times 3} \\\\
   {\boldsymbol 0}\_{3\times 3} & \frac{{\boldsymbol I}\_{3\times 3}}{m}
-\\end{array}\right\]\\\\\\
+\\end{array}\right\],\\\\\\
 \boldsymbol d&=\left\[\\begin{array}{c}
   {\boldsymbol 0}\_{3\times 3}  \\\\
   \tilde{\boldsymbol F}\_r^E 
-\\end{array}\right\]
+\\end{array}\right\].
 \end{align\*}\tag{1}$$
 
 
 $$\begin{align\*}
-\boldsymbol{\dot e}=\boldsymbol {Ae} +\boldsymbol{Bd}
+\boldsymbol{\dot e}=\boldsymbol {Ae} +\boldsymbol{Bd},
 \end{align\*} \tag{2}$$
 
 where $\boldsymbol{e}=\left\[ {\boldsymbol{ e}\_p^T,\boldsymbol{ e}\_v^T}\right\]^T$, $\boldsymbol e_p$ and $\boldsymbol e_v$ represent the tracking errors of position and velocity, respectively, $\tilde{\boldsymbol F}\_r^E=\hat{\boldsymbol F}\_r^E-\boldsymbol F_r^E=-\boldsymbol {\vartheta} \tilde{\boldsymbol v}_{r}^E$ represent the estimation error of the RSO.
