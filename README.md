@@ -1,9 +1,20 @@
 # Stability-analysis
 Stability analysis of translational loop
 
+
 $$\begin{align\*}
 \boldsymbol{\dot e}=\boldsymbol {Ae} +\boldsymbol{Bd}
 \end{align\*} \tag{1}$$
+
+where $\boldsymbol{\dot e}=\left\[ {\boldsymbol{\dot e}\_p^T,\boldsymbol{\dot e}\_v^T}\right\]^T$
+, 
+
+${\boldsymbol{\dot e}\_p$ and ${\boldsymbol{\dot e}\_v$ represent the tracking errors of position and velocity, respectively. 
+
+$$A=\\begin{array}{cc}
+  a & b \\\\
+  c & c
+\\end{array}$$
 
 It can be checked that $\boldsymbol A$ has negative definite structure if $\boldsymbol K_p$ and $\boldsymbol K_v$ have positive definite structures. As a consequence, there must exist a positive definite symmetric matrix $\boldsymbol M$ that meets the equation $\boldsymbol A^T \boldsymbol M+\boldsymbol M \boldsymbol A=-\boldsymbol I$. Subsequently, a Lyapunov function is designed as follows,
 $$V = {\boldsymbol e^T} \boldsymbol{Me} + \frac{1}{2}({{\tilde {\boldsymbol v}_r^E}})^T\tilde {\boldsymbol v}_r^E.\tag{2}$$
@@ -43,11 +54,11 @@ $$\begin{align\*}
 \le &-\frac{ \varepsilon -\lambda _ {M}^{2}\left( \boldsymbol {MB} \right)}{ \varepsilon {{\lambda }_ {M}}\left( \boldsymbol M \right)}{{\boldsymbol e}^T}\boldsymbol {Me}+ \varepsilon {{\lambda }_ {M}}({{\boldsymbol \vartheta }^T}\boldsymbol \vartheta )(\tilde{\boldsymbol v}_ {r}^E)^T{{{\tilde{\boldsymbol v}}}_ {r}^E}\\\\\\
 &-{{\lambda }_ {m}}(\boldsymbol {L\vartheta} )(\tilde{\boldsymbol v}_ {r}^E)^T{{{\tilde{\boldsymbol v}}}_ {r}^E}+\frac{1}{4}(\tilde{\boldsymbol v}_ {r}^E)^T{{{\tilde{\boldsymbol v}}}_ {r}^E}+\delta\\\\\\
 \le &-{{\sigma }_ {1}}{{\boldsymbol e}^T}\boldsymbol {Me}-{{\sigma }_ {2}}(\tilde{\boldsymbol v}_ {r}^E)^T{{{\tilde{\boldsymbol v}}}_ {r}^E}+\delta,
-\end{align\*}$$
+\end{align\*}\tag{6}$$
 
 where ${{\sigma }_ {1}}=\frac{\varepsilon -\lambda _ {m}^{2}\left( \boldsymbol {MB} \right)}{\varepsilon {{\lambda }_ {m}}\left( \boldsymbol M \right)}$ and ${{\sigma }_ {2}}={{\lambda }_ {m}}(\boldsymbol {L\vartheta} )-\varepsilon {{\lambda }_ {M}}({{\boldsymbol \vartheta }^T}\boldsymbol \vartheta )-\frac{1}{4}$. $\sigma_1$ can be ensured to be positive with $\varepsilon -\lambda _ {m}^{2}\left( \boldsymbol {MB} \right)>0$ satisfied. $\sigma_2$ can be guaranteed to be positive by adjusting $\boldsymbol L$ properly.
 We can obtain that $\dot{V} \le -\sigma_1V+\delta$ where $\gamma =\min { {{\sigma }_ {1}},2{{\sigma }_{2}} }$, which implies that
-$$0\le V( t)\le {{e}^{-\gamma t}} \left\[ V(0)-\frac{\delta }{\gamma } \right\]+\frac{\delta }{\gamma }.\tag{6}$$
+$$0\le V( t)\le {{e}^{-\gamma t}} \left\[ V(0)-\frac{\delta }{\gamma } \right\]+\frac{\delta }{\gamma }.\tag{7}$$
 
 
 
