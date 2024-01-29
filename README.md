@@ -1,5 +1,5 @@
-# Stability-analysis
-Stability analysis of translational loop.
+# Stability Analysis
+Stability analysis of the translational loop.
 
 ${\lambda _M}\left(  * \right)$ and ${\lambda _m}\left(  * \right)$ represent the maximum and minimum eigenvalues of a matrix, respectively.
 
