@@ -3,42 +3,36 @@ Stability analysis of translational loop
 
 
 It can be checked that $\boldsymbol A$ has negative definite structure if $\boldsymbol K_p$ and $\boldsymbol K_v$ have positive definite structures. As a consequence, there must exist a positive definite symmetric matrix $\boldsymbol M$ that meets the equation $\boldsymbol A^T \boldsymbol M+\boldsymbol M \boldsymbol A=-\boldsymbol I$. Subsequently, a Lyapunov function is designed as follows,
-$$V = {\boldsymbol e^T} \boldsymbol{Me} + \frac{1}{2}({{\tilde {\boldsymbol v}_r^E}})^T\tilde {\boldsymbol v}_r^E.$$
+$$V = {\boldsymbol e^T} \boldsymbol{Me} + \frac{1}{2}({{\tilde {\boldsymbol v}_r^E}})^T\tilde {\boldsymbol v}_r^E.\tag{2}$$
 
 
 Differentiate $V$, it can be implied that 
 $$\dot{V} =\dot{\boldsymbol e}^T \boldsymbol M\boldsymbol e+{\boldsymbol e}^T \boldsymbol M \dot{\boldsymbol e}+(\tilde{\boldsymbol v}_ {r}^E)^T\dot{\tilde{\boldsymbol v}}_ {r}^E\notag \\
   = {\boldsymbol e^T}{\boldsymbol A^T}{\boldsymbol M}{\boldsymbol e}+{\boldsymbol {\tilde d}^T}{\boldsymbol B^T}{\boldsymbol M}{\boldsymbol e}+{\boldsymbol e^T}{\boldsymbol M}{\boldsymbol A}{\boldsymbol e}\notag \\
-  +{\boldsymbol e^T}{\boldsymbol M}{\boldsymbol B}{\boldsymbol {\tilde d}}+ (\tilde{\boldsymbol v}_ {r}^E)^T\dot{\tilde{\boldsymbol v}}_ {r}^E \notag \\
- ={\boldsymbol e^T}\left( {{\boldsymbol A^T}\boldsymbol M+\boldsymbol{MA}} \right)\boldsymbol e + 2{\boldsymbol e^T}\boldsymbol{MB}\tilde {\boldsymbol d} +
- =- {\boldsymbol e^T}\boldsymbol e + 2{\boldsymbol e^T}\boldsymbol{MB}\tilde {\boldsymbol d} + (\tilde{\boldsymbol v}_ {r}^E)^T\dot{\tilde{\boldsymbol v}}_{r}^E.$$
+  +{\boldsymbol e^T}{\boldsymbol M}{\boldsymbol B}{\boldsymbol {\tilde d}}+ (\tilde{\boldsymbol v}_ {r}^E)^T\dot{\tilde{\boldsymbol v}}_ {r}^E \notag $$
+$$={\boldsymbol e^T}\left( {{\boldsymbol A^T}\boldsymbol M+\boldsymbol{MA}} \right)\boldsymbol e + 2{\boldsymbol e^T}\boldsymbol{MB}\tilde {\boldsymbol d} +(\tilde{\boldsymbol v}_ {r}^E)^T\dot{\tilde{\boldsymbol v}}_ {r}^E
+ =- {\boldsymbol e^T}\boldsymbol e + 2{\boldsymbol e^T}\boldsymbol{MB}\tilde {\boldsymbol d} + (\tilde{\boldsymbol v}_ {r}^E)^T\dot{\tilde{\boldsymbol v}}_{r}^E.\tag{3}$$
 
 Furthermore, by resorting to Young's inequality [^1] , it can be verified that 
-$$
-\begin{align}
-        -{{\boldsymbol e}^T}\boldsymbol e &\le -\frac{{{\boldsymbol e}^T}\boldsymbol {Me}}{{{\lambda }_{M}}\left( \boldsymbol M \right)},\tag{4a} \\
-        -(\tilde{\boldsymbol v}_{r}^E)^T{{{\dot{{\boldsymbol v}}}}_{r}^E} &\le \frac{1}{4}(\tilde{\boldsymbol v}_{r}^E)^T{{{\tilde{\boldsymbol v}}}_{r}^E}+\delta,\tag{4b} \\
-        {{\boldsymbol e}^T}\boldsymbol {MB}\tilde{\boldsymbol d}&\le \frac{1}{2\varepsilon }\lambda _{M}^{2}\left( \boldsymbol {MB} \right){{\boldsymbol e}^T}\boldsymbol e+\frac{\varepsilon }{2}{{\tilde{\boldsymbol d}}^T}\tilde{\boldsymbol d},\tag{4c}
-    \end{align}
-$$
+$$-{{\boldsymbol e}^T}\boldsymbol e \le -\frac{{{\boldsymbol e}^T}\boldsymbol {Me}}{{{\lambda }_ {M}}\left( \boldsymbol M \right)}, $$
+$$-(\tilde{\boldsymbol v}_ {r}^E)^T{{{\dot{{\boldsymbol v}}}}_ {r}^E} \le \frac{1}{4}(\tilde{\boldsymbol v}_ {r}^E)^T{{{\tilde{\boldsymbol v}}}_{r}^E}+\delta, $$
+$${{\boldsymbol e}^T}\boldsymbol {MB}\tilde{\boldsymbol d}\le \frac{1}{2\varepsilon }\lambda _{M}^{2}\left( \boldsymbol {MB} \right){{\boldsymbol e}^T}\boldsymbol e+\frac{\varepsilon }{2}{{\tilde{\boldsymbol d}}^T}\tilde{\boldsymbol d},\tag{4c}$$
 
-where  $\varepsilon$ is an arbitrary positive constant, and ${\delta}=(\dot{\boldsymbol v}_{r}^E)^T{{{\dot{\boldsymbol v}}}_{r}^E}$  is a bounded value concerned with $\dot{\boldsymbol v}_{r}^E$ according to Assumption \ref{assumption1}.
+where  $\varepsilon$ is an arbitrary positive constant, and ${\delta}=(\dot{\boldsymbol v}_ {r}^E)^T{{{\dot{\boldsymbol v}}}_ {r}^E}$  is a bounded value concerned with $\dot{\boldsymbol v}_{r}^E$ according to Assumption \ref{assumption1}.
 
 From the stability analysis of the RSO, it can be obtained that 
-$$
-\begin{align} 
-   (\tilde{\boldsymbol v}_{r}^E)^T{{{\dot{\tilde{\boldsymbol v}}}}_{r}^E}&=-\boldsymbol {L\vartheta} (\tilde{\boldsymbol v}_{r}^E)^T{{{\tilde{\boldsymbol v}}}_{r}^E}-(\tilde{\boldsymbol v}_{r}^E)^T{{{\dot{\boldsymbol v}}}_{r}^E}\notag \\ 
- & \le -{{\lambda }_{m}}(\boldsymbol L\boldsymbol \vartheta )(\tilde{\boldsymbol v}_{r}^E)^T{{{\tilde{\boldsymbol v}}}_{r}^E}+\frac{1}{4}(\tilde{\boldsymbol v}_{r}^E)^T{{{\tilde{\boldsymbol v}}}_{r}^E}+\delta,\tag{5a}\\
-  \label{inequalities2-b} {{{\tilde{\boldsymbol d}}}^T}\tilde{\boldsymbol d}&=(\tilde{\boldsymbol v}_{r}^E)^T{{\boldsymbol \vartheta }^T}\boldsymbol \vartheta {{{\tilde{\boldsymbol v}}}_{r}^E} \le {{\lambda }_{M}}({{\boldsymbol \vartheta }^T}\boldsymbol {\vartheta} )(\tilde{\boldsymbol v}_{r}^E)^T{{{\tilde{\boldsymbol v}}}_{r}^E}.\tag{5b}
+$$(\tilde{\boldsymbol v}_ {r}^E)^T{{{\dot{\tilde{\boldsymbol v}}}}_ {r}^E}=-\boldsymbol {L\vartheta} (\tilde{\boldsymbol v}_ {r}^E)^T{{{\tilde{\boldsymbol v}}}_ {r}^E}-(\tilde{\boldsymbol v}_ {r}^E)^T{{{\dot{\boldsymbol v}}}_ {r}^E}\notag \\ 
+  \le -{{\lambda }_ {m}}(\boldsymbol L\boldsymbol \vartheta )(\tilde{\boldsymbol v}_ {r}^E)^T{{{\tilde{\boldsymbol v}}}_ {r}^E}+\frac{1}{4}(\tilde{\boldsymbol v}_ {r}^E)^T{{{\tilde{\boldsymbol v}}}_ {r}^E}+\delta,\tag{5a}$$
+$${{{\tilde{\boldsymbol d}}}^T}\tilde{\boldsymbol d}=(\tilde{\boldsymbol v}_ {r}^E)^T{{\boldsymbol \vartheta }^T}\boldsymbol \vartheta {{{\tilde{\boldsymbol v}}}_ {r}^E} \le {{\lambda }_ {M}}({{\boldsymbol \vartheta }^T}\boldsymbol {\vartheta} )(\tilde{\boldsymbol v}_ {r}^E)^T{{{\tilde{\boldsymbol v}}}_ {r}^E}.\tag{5b}
  \end{align}\label{inequalities2}
 $$
 Combining $\eqref{V-dot}$ - $\eqref{inequalities2}$, $\eqref{V-dot}$ can be adjusted that
 $$
 \begin{align}
-\dot{ V} \le &-{{\boldsymbol e}^T}\boldsymbol e+\frac{1}{ \varepsilon }\lambda _{M}^{2}\left( \boldsymbol {MB} \right){{\boldsymbol e}^T}\boldsymbol e+ \varepsilon {{{\tilde{\boldsymbol d}}}^T}\tilde{\boldsymbol d}+(\tilde{\boldsymbol v}_{r}^E)^T\dot{\tilde{\boldsymbol v}}_{r}^E \notag\\
- \le &-\frac{ \varepsilon -\lambda _{M}^{2}\left( \boldsymbol {MB} \right)}{ \varepsilon {{\lambda }_{M}}\left( \boldsymbol M \right)}{{\boldsymbol e}^T}\boldsymbol {Me}+ \varepsilon {{\lambda }_{M}}({{\boldsymbol \vartheta }^T}\boldsymbol \vartheta )(\tilde{\boldsymbol v}_{r}^E)^T{{{\tilde{\boldsymbol v}}}_{r}^E}\notag\\
-&-{{\lambda }_{m}}(\boldsymbol {L\vartheta} )(\tilde{\boldsymbol v}_{r}^E)^T{{{\tilde{\boldsymbol v}}}_{r}^E}+\frac{1}{4}(\tilde{\boldsymbol v}_{r}^E)^T{{{\tilde{\boldsymbol v}}}_{r}^E}+\delta \notag\\
-  \le&-{{\sigma }_{1}}{{\boldsymbol e}^T}\boldsymbol {Me}-{{\sigma }_{2}}(\tilde{\boldsymbol v}_{r}^E)^T{{{\tilde{\boldsymbol v}}}_{r}^E}+\delta,\tag{5}
+\dot{ V} \le -{{\boldsymbol e}^T}\boldsymbol e+\frac{1}{ \varepsilon }\lambda _{M}^{2}\left( \boldsymbol {MB} \right){{\boldsymbol e}^T}\boldsymbol e+ \varepsilon {{{\tilde{\boldsymbol d}}}^T}\tilde{\boldsymbol d}+(\tilde{\boldsymbol v}_{r}^E)^T\dot{\tilde{\boldsymbol v}}_{r}^E \notag\\
+ \le -\frac{ \varepsilon -\lambda _{M}^{2}\left( \boldsymbol {MB} \right)}{ \varepsilon {{\lambda }_{M}}\left( \boldsymbol M \right)}{{\boldsymbol e}^T}\boldsymbol {Me}+ \varepsilon {{\lambda }_{M}}({{\boldsymbol \vartheta }^T}\boldsymbol \vartheta )(\tilde{\boldsymbol v}_{r}^E)^T{{{\tilde{\boldsymbol v}}}_{r}^E}\notag\\
+-{{\lambda }_{m}}(\boldsymbol {L\vartheta} )(\tilde{\boldsymbol v}_{r}^E)^T{{{\tilde{\boldsymbol v}}}_{r}^E}+\frac{1}{4}(\tilde{\boldsymbol v}_{r}^E)^T{{{\tilde{\boldsymbol v}}}_{r}^E}+\delta \notag\\
+  \le-{{\sigma }_{1}}{{\boldsymbol e}^T}\boldsymbol {Me}-{{\sigma }_{2}}(\tilde{\boldsymbol v}_{r}^E)^T{{{\tilde{\boldsymbol v}}}_{r}^E}+\delta,\tag{5}
 \end{align}
 $$
 where ${{\sigma }_{1}}=\frac{\varepsilon -\lambda _{m}^{2}\left( \boldsymbol {MB} \right)}{\varepsilon {{\lambda }_{m}}\left( \boldsymbol M \right)}$ and ${{\sigma }_{2}}={{\lambda }_{m}}(\boldsymbol {L\vartheta} )-\varepsilon {{\lambda }_{M}}({{\boldsymbol \vartheta }^T}\boldsymbol \vartheta )-\frac{1}{4}$. $\sigma_1$ can be ensured to be positive with $\varepsilon -\lambda _{m}^{2}\left( \boldsymbol {MB} \right)>0$ satisfied. $\sigma_2$ can be guaranteed to be positive by adjusting $\boldsymbol L$ properly.
