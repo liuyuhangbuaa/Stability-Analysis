@@ -14,8 +14,8 @@ $$={\boldsymbol e^T}\left( {{\boldsymbol A^T}\boldsymbol M+\boldsymbol{MA}} \rig
  =- {\boldsymbol e^T}\boldsymbol e + 2{\boldsymbol e^T}\boldsymbol{MB}\tilde {\boldsymbol d} + (\tilde{\boldsymbol v}_ {r}^E)^T\dot{\tilde{\boldsymbol v}}_{r}^E.\tag{3}$$
 
 Furthermore, by resorting to Young's inequality [^1] , it can be verified that 
-$$-{{\boldsymbol e}^T}\boldsymbol e \le -\frac{{{\boldsymbol e}^T}\boldsymbol {Me}}{{{\lambda }_ {M}}\left( \boldsymbol M \right)}, $$
-$$-(\tilde{\boldsymbol v}_ {r}^E)^T{{{\dot{{\boldsymbol v}}}}_ {r}^E} \le \frac{1}{4}(\tilde{\boldsymbol v}_ {r}^E)^T{{{\tilde{\boldsymbol v}}}_{r}^E}+\delta, $$
+$$-{{\boldsymbol e}^T}\boldsymbol e \le -\frac{{{\boldsymbol e}^T}\boldsymbol {Me}}{{{\lambda }_ {M}}\left( \boldsymbol M \right)}, \tag{4a}$$
+$$-(\tilde{\boldsymbol v}_ {r}^E)^T{{{\dot{{\boldsymbol v}}}}_ {r}^E} \le \frac{1}{4}(\tilde{\boldsymbol v}_ {r}^E)^T{{{\tilde{\boldsymbol v}}}_{r}^E}+\delta, \tag{4b}$$
 $${{\boldsymbol e}^T}\boldsymbol {MB}\tilde{\boldsymbol d}\le \frac{1}{2\varepsilon }\lambda _{M}^{2}\left( \boldsymbol {MB} \right){{\boldsymbol e}^T}\boldsymbol e+\frac{\varepsilon }{2}{{\tilde{\boldsymbol d}}^T}\tilde{\boldsymbol d},\tag{4c}$$
 
 where  $\varepsilon$ is an arbitrary positive constant, and ${\delta}=(\dot{\boldsymbol v}_ {r}^E)^T{{{\dot{\boldsymbol v}}}_ {r}^E}$  is a bounded value concerned with $\dot{\boldsymbol v}_{r}^E$ according to Assumption \ref{assumption1}.
@@ -25,14 +25,14 @@ $$(\tilde{\boldsymbol v}_ {r}^E)^T{{{\dot{\tilde{\boldsymbol v}}}}_ {r}^E}=-\bol
   \le -{{\lambda }_ {m}}(\boldsymbol L\boldsymbol \vartheta )(\tilde{\boldsymbol v}_ {r}^E)^T{{{\tilde{\boldsymbol v}}}_ {r}^E}+\frac{1}{4}(\tilde{\boldsymbol v}_ {r}^E)^T{{{\tilde{\boldsymbol v}}}_ {r}^E}+\delta,\tag{5a}$$
 $${{{\tilde{\boldsymbol d}}}^T}\tilde{\boldsymbol d}=(\tilde{\boldsymbol v}_ {r}^E)^T{{\boldsymbol \vartheta }^T}\boldsymbol \vartheta {{{\tilde{\boldsymbol v}}}_ {r}^E} \le {{\lambda }_ {M}}({{\boldsymbol \vartheta }^T}\boldsymbol {\vartheta} )(\tilde{\boldsymbol v}_ {r}^E)^T{{{\tilde{\boldsymbol v}}}_ {r}^E}.\tag{5b}$$
 
-Combining $\eqref{V-dot}$ - $\eqref{inequalities2}$, $\eqref{V-dot}$ can be adjusted that
+Combining (3)-(5), (3) can be adjusted that
 $$\dot{ V} \le -{{\boldsymbol e}^T}\boldsymbol e+\frac{1}{ \varepsilon }\lambda _ {M}^{2}\left( \boldsymbol {MB} \right){{\boldsymbol e}^T}\boldsymbol e+ \varepsilon {{{\tilde{\boldsymbol d}}}^T}\tilde{\boldsymbol d}+(\tilde{\boldsymbol v}_ {r}^E)^T\dot{\tilde{\boldsymbol v}}_ {r}^E$$
 $$\le -\frac{ \varepsilon -\lambda _ {M}^{2}\left( \boldsymbol {MB} \right)}{ \varepsilon {{\lambda }_ {M}}\left( \boldsymbol M \right)}{{\boldsymbol e}^T}\boldsymbol {Me}+ \varepsilon {{\lambda }_ {M}}({{\boldsymbol \vartheta }^T}\boldsymbol \vartheta )(\tilde{\boldsymbol v}_ {r}^E)^T{{{\tilde{\boldsymbol v}}}_ {r}^E}$$
 $$-{{\lambda }_ {m}}(\boldsymbol {L\vartheta} )(\tilde{\boldsymbol v}_ {r}^E)^T{{{\tilde{\boldsymbol v}}}_ {r}^E}+\frac{1}{4}(\tilde{\boldsymbol v}_ {r}^E)^T{{{\tilde{\boldsymbol v}}}_ {r}^E}+\delta$$
 $$\le-{{\sigma }_ {1}}{{\boldsymbol e}^T}\boldsymbol {Me}-{{\sigma }_ {2}}(\tilde{\boldsymbol v}_ {r}^E)^T{{{\tilde{\boldsymbol v}}}_ {r}^E}+\delta,$$
 where ${{\sigma }_ {1}}=\frac{\varepsilon -\lambda _ {m}^{2}\left( \boldsymbol {MB} \right)}{\varepsilon {{\lambda }_ {m}}\left( \boldsymbol M \right)}$ and ${{\sigma }_ {2}}={{\lambda }_ {m}}(\boldsymbol {L\vartheta} )-\varepsilon {{\lambda }_ {M}}({{\boldsymbol \vartheta }^T}\boldsymbol \vartheta )-\frac{1}{4}$. $\sigma_1$ can be ensured to be positive with $\varepsilon -\lambda _ {m}^{2}\left( \boldsymbol {MB} \right)>0$ satisfied. $\sigma_2$ can be guaranteed to be positive by adjusting $\boldsymbol L$ properly.
-We can obtain that $\dot{V} \le -\sigma_1V+\delta$ where $\gamma =\min \left\{ {{\sigma }_ {1}},2{{\sigma }_{2}} \right\}$, which implies that
-$$0\le V\left( t \right)\le {{e}^{-\gamma t}}\left[ V(0)-\frac{\delta }{\gamma } \right]+\frac{\delta }{\gamma }.\tag{6}$$
+We can obtain that $\dot{V} \le -\sigma_1V+\delta$ where $\gamma =\min { {{\sigma }_ {1}},2{{\sigma }_{2}} }$, which implies that
+$$0\le V( t)\le {{e}^{-\gamma t}} \left\[ V(0)-\frac{\delta }{\gamma } \right\]+\frac{\delta }{\gamma }.\tag{6}$$
 
 
 
