@@ -1,17 +1,29 @@
 # Stability-analysis
 Stability analysis of translational loop
 
+$$\begin{align\*}
+\boldsymbol{\dot e}=\boldsymbol {Ae} +\boldsymbol{Bd}
+\end{align\*} \tag{2}$$
+
+$$\begin{align\*}
+\dot{V} &=\dot{\boldsymbol e}^T \boldsymbol M\boldsymbol e+{\boldsymbol e}^T \boldsymbol M \dot{\boldsymbol e}+(\tilde{\boldsymbol v}_ {r}^E)^T\dot{\tilde{\boldsymbol v}}_ {r}^E \\\\\\
+&= {\boldsymbol e^T}{\boldsymbol A^T}{\boldsymbol M}{\boldsymbol e}+{\boldsymbol {\tilde d}^T}{\boldsymbol B^T}{\boldsymbol M}{\boldsymbol e}+{\boldsymbol e^T}{\boldsymbol M}{\boldsymbol A}{\boldsymbol e}+{\boldsymbol e^T}{\boldsymbol M}{\boldsymbol B}{\boldsymbol {\tilde d}}+ (\tilde{\boldsymbol v}_ {r}^E)^T\dot{\tilde{\boldsymbol v}}_ {r}^E \\\\\\
+&={\boldsymbol e^T}\left( {{\boldsymbol A^T}\boldsymbol M+\boldsymbol{MA}} \right)\boldsymbol e + 2{\boldsymbol e^T}\boldsymbol{MB}\tilde {\boldsymbol d} +(\tilde{\boldsymbol v}_ {r}^E)^T\dot{\tilde{\boldsymbol v}}_ {r}^E\\\\\\
+ &=- {\boldsymbol e^T}\boldsymbol e + 2{\boldsymbol e^T}\boldsymbol{MB}\tilde {\boldsymbol d} + (\tilde{\boldsymbol v}_ {r}^E)^T\dot{\tilde{\boldsymbol v}}_{r}^E.
+\end{align\*} \tag{3}$$
 
 It can be checked that $\boldsymbol A$ has negative definite structure if $\boldsymbol K_p$ and $\boldsymbol K_v$ have positive definite structures. As a consequence, there must exist a positive definite symmetric matrix $\boldsymbol M$ that meets the equation $\boldsymbol A^T \boldsymbol M+\boldsymbol M \boldsymbol A=-\boldsymbol I$. Subsequently, a Lyapunov function is designed as follows,
 $$V = {\boldsymbol e^T} \boldsymbol{Me} + \frac{1}{2}({{\tilde {\boldsymbol v}_r^E}})^T\tilde {\boldsymbol v}_r^E.\tag{2}$$
 
 
 Differentiate $V$, it can be implied that 
-$$\dot{V} =\dot{\boldsymbol e}^T \boldsymbol M\boldsymbol e+{\boldsymbol e}^T \boldsymbol M \dot{\boldsymbol e}+(\tilde{\boldsymbol v}_ {r}^E)^T\dot{\tilde{\boldsymbol v}}_ {r}^E\notag \\
-  = {\boldsymbol e^T}{\boldsymbol A^T}{\boldsymbol M}{\boldsymbol e}+{\boldsymbol {\tilde d}^T}{\boldsymbol B^T}{\boldsymbol M}{\boldsymbol e}+{\boldsymbol e^T}{\boldsymbol M}{\boldsymbol A}{\boldsymbol e}\notag \\
-  +{\boldsymbol e^T}{\boldsymbol M}{\boldsymbol B}{\boldsymbol {\tilde d}}+ (\tilde{\boldsymbol v}_ {r}^E)^T\dot{\tilde{\boldsymbol v}}_ {r}^E \notag $$
-$$={\boldsymbol e^T}\left( {{\boldsymbol A^T}\boldsymbol M+\boldsymbol{MA}} \right)\boldsymbol e + 2{\boldsymbol e^T}\boldsymbol{MB}\tilde {\boldsymbol d} +(\tilde{\boldsymbol v}_ {r}^E)^T\dot{\tilde{\boldsymbol v}}_ {r}^E
- =- {\boldsymbol e^T}\boldsymbol e + 2{\boldsymbol e^T}\boldsymbol{MB}\tilde {\boldsymbol d} + (\tilde{\boldsymbol v}_ {r}^E)^T\dot{\tilde{\boldsymbol v}}_{r}^E.\tag{3}$$
+$$\begin{align\*}
+\dot{V} &=\dot{\boldsymbol e}^T \boldsymbol M\boldsymbol e+{\boldsymbol e}^T \boldsymbol M \dot{\boldsymbol e}+(\tilde{\boldsymbol v}_ {r}^E)^T\dot{\tilde{\boldsymbol v}}_ {r}^E \\\\\\
+&= {\boldsymbol e^T}{\boldsymbol A^T}{\boldsymbol M}{\boldsymbol e}+{\boldsymbol {\tilde d}^T}{\boldsymbol B^T}{\boldsymbol M}{\boldsymbol e}+{\boldsymbol e^T}{\boldsymbol M}{\boldsymbol A}{\boldsymbol e}\\\\\\
+&+{\boldsymbol e^T}{\boldsymbol M}{\boldsymbol B}{\boldsymbol {\tilde d}}+ (\tilde{\boldsymbol v}_ {r}^E)^T\dot{\tilde{\boldsymbol v}}_ {r}^E \\\\\\ 
+&={\boldsymbol e^T}\left( {{\boldsymbol A^T}\boldsymbol M+\boldsymbol{MA}} \right)\boldsymbol e + 2{\boldsymbol e^T}\boldsymbol{MB}\tilde {\boldsymbol d} +(\tilde{\boldsymbol v}_ {r}^E)^T\dot{\tilde{\boldsymbol v}}_ {r}^E \\\\\\
+&=- {\boldsymbol e^T}\boldsymbol e + 2{\boldsymbol e^T}\boldsymbol{MB}\tilde {\boldsymbol d} + (\tilde{\boldsymbol v}_ {r}^E)^T\dot{\tilde{\boldsymbol v}}_{r}^E.
+\end{align\*}$$
 
 Furthermore, by resorting to Young's inequality [^1] , it can be verified that 
 $$-{{\boldsymbol e}^T}\boldsymbol e \le -\frac{{{\boldsymbol e}^T}\boldsymbol {Me}}{{{\lambda }_ {M}}\left( \boldsymbol M \right)}, \tag{4a}$$
