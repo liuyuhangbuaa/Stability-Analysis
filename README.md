@@ -1,20 +1,29 @@
 # Stability-analysis
 Stability analysis of translational loop
 
+$$\begin{align\*}
+\boldsymbol A&=\left\[\\begin{array}{cc}
+  {\boldsymbol 0}\_{3\times 3} & {\boldsymbol I}\_{3\times 3} \\\\
+  -\frac{\boldsymbol K_p}{m} & -\frac{\boldsymbol K_v}{m}
+\\end{array}\right\]\\\\\\
+\boldsymbol B&=\left\[\\begin{array}{cc}
+  {\boldsymbol 0}\_{3\times 3} & {\boldsymbol 0}\_{3\times 3} \\\\
+  {\boldsymbol 0}\_{3\times 3} & \frac{{\boldsymbol I}\_{3\times 3}}{m}
+\\end{array}\right\]\\\\\\
+\boldsymbol d&=\left\[\\begin{array}{c}
+  {\boldsymbol 0}\_{3\times 3}  \\\\
+  \tilde{\boldsymbol F}\_r^E 
+\\end{array}\right\]
+\end{align\*}\tag{1}$$
+
 
 $$\begin{align\*}
 \boldsymbol{\dot e}=\boldsymbol {Ae} +\boldsymbol{Bd}
 \end{align\*} \tag{1}$$
 
-where $\boldsymbol{\dot e}=\left\[ {\boldsymbol{\dot e}\_p^T,\boldsymbol{\dot e}\_v^T}\right\]^T$
-, 
+where $\boldsymbol{e}=\left\[ {\boldsymbol{ e}\_p^T,\boldsymbol{ e}\_v^T}\right\]^T$, $\boldsymbol e_p$ and $\boldsymbol e_v$ represent the tracking errors of position and velocity, respectively. 
 
-${\boldsymbol{\dot e}\_p$ and ${\boldsymbol{\dot e}\_v$ represent the tracking errors of position and velocity, respectively. 
 
-$$A=\\begin{array}{cc}
-  a & b \\\\
-  c & c
-\\end{array}$$
 
 It can be checked that $\boldsymbol A$ has negative definite structure if $\boldsymbol K_p$ and $\boldsymbol K_v$ have positive definite structures. As a consequence, there must exist a positive definite symmetric matrix $\boldsymbol M$ that meets the equation $\boldsymbol A^T \boldsymbol M+\boldsymbol M \boldsymbol A=-\boldsymbol I$. Subsequently, a Lyapunov function is designed as follows,
 $$V = {\boldsymbol e^T} \boldsymbol{Me} + \frac{1}{2}({{\tilde {\boldsymbol v}_r^E}})^T\tilde {\boldsymbol v}_r^E.\tag{2}$$
