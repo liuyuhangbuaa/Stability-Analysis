@@ -33,7 +33,7 @@ $$V = {\boldsymbol e^T} \boldsymbol{Me} + \frac{1}{2}({{\tilde {\boldsymbol v}_r
 Differentiate $V$, it can be implied that 
 
 $$\begin{align\*}
-\dot{V} &=\dot{\boldsymbol e}^T \boldsymbol M\boldsymbol e+{\boldsymbol e}^T \boldsymbol M \dot{\boldsymbol e}+(\tilde{\boldsymbol v}_ {r}^E)^T\dot{\tilde{\boldsymbol v}}_ {r}^E \\\\\\
+\dot{V} &=\dot{\boldsymbol e}^T \boldsymbol M \boldsymbol e+{\boldsymbol e}^T \boldsymbol M \dot{\boldsymbol e}+(\tilde{\boldsymbol v}_ {r}^E)^T\dot{\tilde{\boldsymbol v}}_ {r}^E \\\\\\
 &= {\boldsymbol e^T}{\boldsymbol A^T}{\boldsymbol M}{\boldsymbol e}+{\boldsymbol {\tilde d}^T}{\boldsymbol B^T}{\boldsymbol M}{\boldsymbol e}+{\boldsymbol e^T}{\boldsymbol M}{\boldsymbol A}{\boldsymbol e}+{\boldsymbol e^T}{\boldsymbol M}{\boldsymbol B}{\boldsymbol {\tilde d}}+ (\tilde{\boldsymbol v}_ {r}^E)^T\dot{\tilde{\boldsymbol v}}_ {r}^E \\\\\\
 &={\boldsymbol e^T}\left( {{\boldsymbol A^T}\boldsymbol M+\boldsymbol{MA}} \right)\boldsymbol e + 2{\boldsymbol e^T}\boldsymbol{MB}\tilde {\boldsymbol d} +(\tilde{\boldsymbol v}_ {r}^E)^T\dot{\tilde{\boldsymbol v}}_ {r}^E\\\\\\
  &=- {\boldsymbol e^T}\boldsymbol e + 2{\boldsymbol e^T}\boldsymbol{MB}\tilde {\boldsymbol d} + (\tilde{\boldsymbol v}_ {r}^E)^T\dot{\tilde{\boldsymbol v}}_{r}^E.
@@ -43,28 +43,35 @@ $$\begin{align\*}
 Furthermore, by resorting to Young's inequality [^1] , it can be verified that 
 
 $$\begin{align\*}
--{{\boldsymbol e}^T}\boldsymbol e &\le -\frac{{{\boldsymbol e}^T}\boldsymbol {Me}}{{{\lambda }_ {M}}\left( \boldsymbol M \right)}, \tag{5a}\\\\\\
--(\tilde{\boldsymbol v}_ {r}^E)^T{{{\dot{{\boldsymbol v}}}}_ {r}^E} &\le \frac{1}{4}(\tilde{\boldsymbol v}_ {r}^E)^T{{{\tilde{\boldsymbol v}}}_{r}^E}+\delta, \tag{5b}\\\\\\
-{{\boldsymbol e}^T}\boldsymbol {MB}\tilde{\boldsymbol d}&\le \frac{1}{2\varepsilon }\lambda _{M}^{2}\left( \boldsymbol {MB} \right){{\boldsymbol e}^T}\boldsymbol e+\frac{\varepsilon }{2}{{\tilde{\boldsymbol d}}^T}\tilde{\boldsymbol d},\tag{5c}
-\end{align\*}$$
+-{{\boldsymbol e}^T}\boldsymbol e &\le -\frac{{{\boldsymbol e}^T}\boldsymbol {Me}}{{{\lambda }_ {M}}\left( \boldsymbol M \right)}, \\\\\\
+\end{align\*} \tag{5a}$$
+$$\begin{align\*}
+-(\tilde{\boldsymbol v}_ {r}^E)^T{{{\dot{{\boldsymbol v}}}}_ {r}^E} &\le \frac{1}{4}(\tilde{\boldsymbol v}_ {r}^E)^T{{{\tilde{\boldsymbol v}}}_{r}^E}+\delta, \\\\\\
+\end{align\*}\tag{5b}$$
+$$\begin{align\*}
+{{\boldsymbol e}^T}\boldsymbol {MB}\tilde{\boldsymbol d}&\le \frac{1}{2\varepsilon }\lambda _{M}^{2}\left( \boldsymbol {MB} \right){{\boldsymbol e}^T}\boldsymbol e+\frac{\varepsilon }{2}{{\tilde{\boldsymbol d}}^T}\tilde{\boldsymbol d},
+\end{align\*}\tag{5c}$$
 
 where  $\varepsilon$ is an arbitrary positive constant, and ${\delta}=(\dot{\boldsymbol v}_ {r}^E)^T{{{\dot{\boldsymbol v}}}_ {r}^E}$  is a bounded value concerned with $\dot{\boldsymbol v}_{r}^E$.
 
 From the stability analysis of the RSO, it can be obtained that 
 
 $$\begin{align\*}
-(\tilde{\boldsymbol v}_ {r}^E)^T{{{\dot{\tilde{\boldsymbol v}}}}_ {r}^E}&=-\boldsymbol {L\vartheta} (\tilde{\boldsymbol v}_ {r}^E)^T{{{\tilde{\boldsymbol v}}}_ {r}^E}-(\tilde{\boldsymbol v}_ {r}^E)^T{{{\dot{\boldsymbol v}}}_ {r}^E}\notag \\\\\\\\ 
-  &\le -{{\lambda }_ {m}}(\boldsymbol L\boldsymbol \vartheta )(\tilde{\boldsymbol v}_ {r}^E)^T{{{\tilde{\boldsymbol v}}}_ {r}^E}+\frac{1}{4}(\tilde{\boldsymbol v}_ {r}^E)^T{{{\tilde{\boldsymbol v}}}_ {r}^E}+\delta,\tag{6a}\\\\\\
-{{{\tilde{\boldsymbol d}}}^T}\tilde{\boldsymbol d}&=(\tilde{\boldsymbol v}_ {r}^E)^T{{\boldsymbol \vartheta }^T}\boldsymbol \vartheta {{{\tilde{\boldsymbol v}}}_ {r}^E} \le {{\lambda }_ {M}}({{\boldsymbol \vartheta }^T}\boldsymbol {\vartheta} )(\tilde{\boldsymbol v}_ {r}^E)^T{{{\tilde{\boldsymbol v}}}_ {r}^E}.\tag{6b}
-\end{align\*}$$
+(\tilde{\boldsymbol v}_ {r}^E)^T{{{\dot{\tilde{\boldsymbol v}}}}_ {r}^E}&=-\boldsymbol {L\vartheta} (\tilde{\boldsymbol v}_ {r}^E)^T{{{\tilde{\boldsymbol v}}}_ {r}^E}-(\tilde{\boldsymbol v}_ {r}^E)^T{{{\dot{\boldsymbol v}}}_ {r}^E} \\\\\\\\ 
+&\le -{{\lambda }_ {m}}(\boldsymbol L\boldsymbol \vartheta )(\tilde{\boldsymbol v}_ {r}^E)^T{{{\tilde{\boldsymbol v}}}_ {r}^E}+\frac{1}{4}(\tilde{\boldsymbol v}_ {r}^E)^T{{{\tilde{\boldsymbol v}}}_ {r}^E}+\delta,\\\\\\
+\end{align\*} \tag{6a}$$
+$$\begin{align\*}
+{{{\tilde{\boldsymbol d}}}^T}\tilde{\boldsymbol d}&=(\tilde{\boldsymbol v}_ {r}^E)^T{{\boldsymbol \vartheta }^T}\boldsymbol \vartheta {{{\tilde{\boldsymbol v}}}_ {r}^E} \le {{\lambda }_ {M}}({{\boldsymbol \vartheta }^T}\boldsymbol {\vartheta} )(\tilde{\boldsymbol v}_ {r}^E)^T{{{\tilde{\boldsymbol v}}}_ {r}^E}.
+\end{align\*}\tag{6b}$$
+
 
 Combining (4)-(6), (4) can be adjusted that
 
 $$\begin{align\*}
-\dot{ V} \le &-{{\boldsymbol e}^T}\boldsymbol e+\frac{1}{ \varepsilon }\lambda _ {M}^{2}\left( \boldsymbol {MB} \right){{\boldsymbol e}^T}\boldsymbol e+ \varepsilon {{{\tilde{\boldsymbol d}}}^T}\tilde{\boldsymbol d}+(\tilde{\boldsymbol v}_ {r}^E)^T\dot{\tilde{\boldsymbol v}}_ {r}^E\\\\\\
-\le &-\frac{ \varepsilon -\lambda _ {M}^{2}\left( \boldsymbol {MB} \right)}{ \varepsilon {{\lambda }_ {M}}\left( \boldsymbol M \right)}{{\boldsymbol e}^T}\boldsymbol {Me}+ \varepsilon {{\lambda }_ {M}}({{\boldsymbol \vartheta }^T}\boldsymbol \vartheta )(\tilde{\boldsymbol v}_ {r}^E)^T{{{\tilde{\boldsymbol v}}}_ {r}^E}\\\\\\
+\dot{ V} &\le -{{\boldsymbol e}^T}\boldsymbol e+\frac{1}{ \varepsilon }\lambda _ {M}^{2}\left( \boldsymbol {MB} \right){{\boldsymbol e}^T}\boldsymbol e+ \varepsilon {{{\tilde{\boldsymbol d}}}^T}\tilde{\boldsymbol d}+(\tilde{\boldsymbol v}_ {r}^E)^T\dot{\tilde{\boldsymbol v}}_ {r}^E\\\\\\
+&\le -\frac{ \varepsilon -\lambda _ {M}^{2}\left( \boldsymbol {MB} \right)}{ \varepsilon {{\lambda }_ {M}}\left( \boldsymbol M \right)}{{\boldsymbol e}^T}\boldsymbol {Me}+ \varepsilon {{\lambda }_ {M}}({{\boldsymbol \vartheta }^T}\boldsymbol \vartheta )(\tilde{\boldsymbol v}_ {r}^E)^T{{{\tilde{\boldsymbol v}}}_ {r}^E}\\\\\\
 &-{{\lambda }_ {m}}(\boldsymbol {L\vartheta} )(\tilde{\boldsymbol v}_ {r}^E)^T{{{\tilde{\boldsymbol v}}}_ {r}^E}+\frac{1}{4}(\tilde{\boldsymbol v}_ {r}^E)^T{{{\tilde{\boldsymbol v}}}_ {r}^E}+\delta\\\\\\
-\le &-{{\sigma }_ {1}}{{\boldsymbol e}^T}\boldsymbol {Me}-{{\sigma }_ {2}}(\tilde{\boldsymbol v}_ {r}^E)^T{{{\tilde{\boldsymbol v}}}_ {r}^E}+\delta,
+&\le -{{\sigma }_ {1}}{{\boldsymbol e}^T}\boldsymbol {Me}-{{\sigma }_ {2}}(\tilde{\boldsymbol v}_ {r}^E)^T{{{\tilde{\boldsymbol v}}}_ {r}^E}+\delta,
 \end{align\*}\tag{7}$$
 
 where ${{\sigma }_ {1}}=\frac{\varepsilon -\lambda _ {m}^{2}\left( \boldsymbol {MB} \right)}{\varepsilon {{\lambda }_ {m}}\left( \boldsymbol M \right)}$ and ${{\sigma }_ {2}}={{\lambda }_ {m}}(\boldsymbol {L\vartheta} )-\varepsilon {{\lambda }_ {M}}({{\boldsymbol \vartheta }^T}\boldsymbol \vartheta )-\frac{1}{4}$. $\sigma_1$ can be ensured to be positive with $\varepsilon -\lambda _ {m}^{2}\left( \boldsymbol {MB} \right)>0$ satisfied. $\sigma_2$ can be guaranteed to be positive by adjusting $\boldsymbol L$ properly.
