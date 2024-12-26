@@ -28,7 +28,7 @@ where $\boldsymbol{e}=\left\[ {\boldsymbol{ e}\_p^T,\boldsymbol{ e}\_v^T}\right\
 
 
 It can be checked that $\boldsymbol A$ has negative definite structure if $\boldsymbol K_p$ and $\boldsymbol K_v$ have positive definite structures. As a consequence, there must exist a positive definite symmetric matrix $\boldsymbol M$ that meets the equation $\boldsymbol A^T \boldsymbol M+\boldsymbol M \boldsymbol A=-\boldsymbol I$. Subsequently, a Lyapunov function is designed as follows,
-$$V = {\boldsymbol e^T} \boldsymbol{Me} + \frac{1}{2}({{\tilde {\boldsymbol v}_r^E}})^T\tilde {\boldsymbol v}_r^E.\tag{3}$$
+$$\begin{align\*} V = {\boldsymbol e^T} \boldsymbol{Me} + \frac{1}{2}({{\tilde {\boldsymbol v}_r^E}})^T\tilde {\boldsymbol v}_r^E.\end{align\*}\tag{3}$$
 
 Differentiate $V$, it can be implied that 
 
