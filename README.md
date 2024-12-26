@@ -1,3 +1,9 @@
+# Introduction
+This file is a supplemented material serving for stability analysis of the combination of PD
+controller and rain speed observer (RSO), which is a innovatively designed observer introduced
+in manuscript submitted to IEEE Transactions on Industrial Electronics with paper ID 24-2548.
+It can also provide reference for the stability analysis of other similar studies. More standardized and detailed representations can be found in the PDF files. 
+
 # Stability Analysis
 Stability analysis of the translational loop.
 
@@ -28,7 +34,10 @@ where $\boldsymbol{e}=\left\[ {\boldsymbol{ e}\_p^T,\boldsymbol{ e}\_v^T}\right\
 
 
 It can be checked that $\boldsymbol A$ has negative definite structure if $\boldsymbol K_p$ and $\boldsymbol K_v$ have positive definite structures. As a consequence, there must exist a positive definite symmetric matrix $\boldsymbol M$ that meets the equation $\boldsymbol A^T \boldsymbol M+\boldsymbol M \boldsymbol A=-\boldsymbol I$. Subsequently, a Lyapunov function is designed as follows,
-$$\begin{align\*} V = {\boldsymbol e^T} \boldsymbol{Me} + \frac{1}{2}({{\tilde {\boldsymbol v}_r^E}})^T\tilde {\boldsymbol v}_r^E.\end{align\*}\tag{3}$$
+
+$$\begin{align\*} 
+V = {\boldsymbol e^T} \boldsymbol{Me} + \frac{1}{2}({{\tilde {\boldsymbol v}_r^E}})^T\tilde {\boldsymbol v}_r^E.
+\end{align\*}\tag{3}$$
 
 Differentiate $V$, it can be implied that 
 
