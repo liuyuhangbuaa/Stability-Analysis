@@ -84,7 +84,7 @@ $$\begin{align\*}
 \end{align\*}\tag{7}$$
 
 where ${{\sigma }_ {1}}=\frac{\varepsilon -\lambda _ {M}^{2}\left( \boldsymbol {MB} \right)}{\varepsilon {{\lambda }_ {M}}\left( \boldsymbol M \right)}$ and ${{\sigma }_ {2}}={{\lambda }_ {m}}(\boldsymbol {L\vartheta} )-\varepsilon {{\lambda }_ {M}}({{\boldsymbol \vartheta }^T}\boldsymbol \vartheta )-\frac{1}{4}$. $\sigma_1$ can be ensured to be positive with $\varepsilon -\lambda _ {M}^{2}\left( \boldsymbol {MB} \right)>0$ satisfied. $\sigma_2$ can be guaranteed to be positive by adjusting $\boldsymbol L$ properly.
-We can obtain that $\dot{V} \le -\gamma V+\delta$ where $\gamma =\min { {{\sigma }_ {1}},2{{\sigma }_{2}} }$, which implies that
+We can obtain that $\dot{V} \le -\gamma V+\delta$ where $\gamma =\min \\{ {{\sigma }_ {1}},2{{\sigma }_{2}} \\}$, which implies that
 $$0\le V( t)\le {{e}^{-\gamma t}} \left\[ V(0)-\frac{\delta }{\gamma } \right\]+\frac{\delta }{\gamma }.\tag{8}$$
 
 
