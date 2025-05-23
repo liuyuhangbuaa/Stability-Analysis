@@ -12,7 +12,7 @@ ${\lambda _M}\left(  * \right)$ and ${\lambda _m}\left(  * \right)$ represent th
 $$\begin{align\*}
 \boldsymbol A&=\left\[\\begin{array}{cc}
   {\boldsymbol 0}\_{3\times 3} & {\boldsymbol I}\_{3\times 3} \\\\
-  -\frac{\boldsymbol K_p}{m} & -\frac{\boldsymbol K_v}{m}
+  -{\boldsymbol K_p} & -{\boldsymbol K_v}
 \\end{array}\right\],\\\\\\
 \boldsymbol B&=\left\[\\begin{array}{cc}
   {\boldsymbol 0}\_{3\times 3} & {\boldsymbol 0}\_{3\times 3} \\\\
